@@ -1,43 +1,34 @@
 #include <stdio.h>
-
-int input()
+ int input()
 {
   int n;
-  printf("enter a number \n");
-  scanf("%d",&n);
+  printf("enter sides of triangle \n");
+  scanf("%d", &n);
   return n;
 }
-int comp(int n)
-{ 
-  if(n==0 || n==1){
+int sides(int a, int b, int c){
+  if(a==b || b==c || a==c){ 
     return 1;
   }
   else{
-    for(int i=2;i<=n/2;++i){
-      if(n%i==0){
-        return 2;
-      }
-      else{
-        return 2;
-      }
-    }
+    return 0;
   }
 }
-void output(int n, int value){
+void output(int value)
+{
   if(value==1){
-    printf("0 and 1 are not considered as prime or composite");
-  }
-  else if(value==2){
-    printf("%d is a prime number",n);
+    printf("given triangle is scalene");
   }
   else{
-    printf("%d is a composite number",n);
+    printf("given triangle is not scanlene");
   }
 }
 int main()
 {
-  int n=input();
-  int x=comp(n);
-  output(n,x);
+  int a=input();
+  int b=input();
+  int c=input();
+  int value=sides(a,b,c);
+  output(value);
   return 0;
 }

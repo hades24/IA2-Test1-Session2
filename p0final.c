@@ -12,7 +12,7 @@ int area(int a, int b){
 }
 void output(float value)
 {
-  printf("area of the triangle is %f",value);
+  printf("area of the triangle is %.1f",value);
 }
 int main()
 {
