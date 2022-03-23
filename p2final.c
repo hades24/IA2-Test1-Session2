@@ -9,7 +9,7 @@
 int sides(int a, int b, int c){
   if(a==b || b==c || a==c){ 
     return 1;
-  }
+  } 
   else{
     return 0;
   }
