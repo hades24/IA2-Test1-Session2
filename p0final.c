@@ -6,7 +6,7 @@
    scanf("%d", &n);
    return n;
  }
-int area(int a, int b){
+int area(int a, int b){ 
   float value=a*b/2;
   return value;
 }
