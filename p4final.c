@@ -36,7 +36,7 @@ int main(){
         int n=size();
         int a[n];
         check_composite(n,a);
-        int value=composite(n,a);
+        int value=composite(n,a); 
         output(value);
         return 0;
 } 
