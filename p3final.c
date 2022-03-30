@@ -31,7 +31,7 @@ void output(int n, int value){
   else if(value==3){
     printf("%d is a prime number",n);
   }
-}
+} 
 int main(){
   int n=input();
   int x=comp(n);
